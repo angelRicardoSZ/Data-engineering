@@ -5,7 +5,7 @@ def ordenamiento_por_mezcla(lista):
         medio = len(lista) // 2
         izquierda = lista[:medio]
         derecha = lista[medio:]
-        print(izquierda, "*" * 5 )
+        print(izquierda, "*" * 5 , derecha)
         
         # llamada recursiva
         ordenamiento_por_mezcla(izquierda)
@@ -32,10 +32,14 @@ def ordenamiento_por_mezcla(lista):
             i += 1
             k += 1
             
-        while j < len(izquierda):
+        while j < len(derecha):
             lista[k] = derecha[j]
             j += 1
             k += 1
+            
+        print(f'izquierda {izquierda}, derecha {derecha}')
+        print(lista)
+        print('-' * 50)
     return lista   
         
 
