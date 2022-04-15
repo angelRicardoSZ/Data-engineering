@@ -6,7 +6,7 @@ import bs4
 class HomePage:
 
     def __init__(self, news_site_uid, url):
-        self._config = config()["news_sites"][news_site_uid]
+        self._config = config()["new_sites"][news_site_uid]
         self._queries = self._config["queries"]
         self._html = None
         self._visit(url)
