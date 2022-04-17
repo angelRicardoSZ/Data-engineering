@@ -21,17 +21,17 @@ def _news_scraper(news_site_uid):
     articles = []
     for link in homepage.article_links:
         print(link)
-        artricle = _fetch_article(news_site_uid,host,link)
+        article = _fetch_article(news_site_uid,host,link)
         if article:
             logger.info('Article fetched!!')
             articles.append(article)
             print(article.title)
-    print(len(article))
+    print(len(articles))
 
 
 
 
-def _fetch_artice(news_site_uid, host, link):
+def _fetch_article(news_site_uid, host, link):
     logger.info('Start fetching article at {}'.format(link))
     article = None
     try:

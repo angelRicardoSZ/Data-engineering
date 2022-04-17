@@ -2,9 +2,9 @@ new_sites:
         forbes:
                 url: http://forbes.co
                 queries:
-                       homepage_article_links: ".channel__content a"
-                article_body:  "#pinno-content-body-top #pinno-content-main p"                        ""
-                article_title: "#pinno-post-head h1 p"
+                        homepage_article_links: ".channel__content a"
+                        article_body:  "#pinno-content-body-top"                      
+                        article_title: "#pinno-post-head h0 p"
         elpais:
                 url: https://elpais.com
                 queries:
