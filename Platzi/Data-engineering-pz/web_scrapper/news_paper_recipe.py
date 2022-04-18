@@ -23,7 +23,8 @@ def _read_data(filename):
 def _extract_newspaper_uid(filename):
     logger.info('Extracting newspaper uid')
     newspaper_uid = filename.split('_')[0]
-    logger.info('Newspaper uid detected: {}').format(newspaper_uid)
+    print(filename.split('_')[0])
+    logger.info('Newspaper uid detected: {}'.format(newspaper_uid))
     return newspaper_uid
 
 def _add_newspaper_uid_column(df, newspaper_uid):
@@ -43,7 +44,7 @@ if __name__ == "__main__":
                         type=str)
     args= parser.parse_args()
     df = main(args.filename)
-    print(main)
+    print(df)
 
 
 
